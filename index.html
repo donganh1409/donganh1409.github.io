@@ -2124,6 +2124,7 @@ footer{border-top:1px solid var(--ink); padding-block:24px 56px; display:flex; j
 .sx-map div:nth-child(5){background:#E3F5EB; box-shadow:inset 0 0 0 1.5px #9BD7B5}
 @media (max-width: 1000px){ .rv-tldr, .kp{grid-template-columns:repeat(2,minmax(0,1fr))} .mt, .rv-two, .fz, .dm-out{grid-template-columns:minmax(0,1fr)} .sx-map{grid-template-columns:repeat(2,minmax(0,1fr))} }
 @media (max-width: 640px){ .rv-tldr, .kp{grid-template-columns:minmax(0,1fr)} .rv-crumb{display:none} .sx-map{grid-template-columns:minmax(0,1fr)} .sx-arrow{display:none} .pp-a{display:none} .pp-b{max-width:none; flex:1 1 100%} .dm-rank li{grid-template-columns:26px 90px minmax(0,1fr) 48px} .eqs p{grid-template-columns:minmax(0,1fr)} .rv-dl div{grid-template-columns:minmax(0,1fr); gap:2px} }
+#v-home .h-co{display:block; flex-basis:100%; font-size:12.5px; color:#55534D}
 </style>
 <!--/PROJ-CSS-->
 
@@ -2154,7 +2155,7 @@ footer{border-top:1px solid var(--ink); padding-block:24px 56px; display:flex; j
     </div>
     <dl class="h-meta">
       <div><dt>Now</dt><dd><i class="live" aria-hidden="true"></i>Master's student, HCMUT · open to PhD positions in HCI</dd></div>
-      <div><dt>Publications</dt><dd class="h-links"><a href="#/accv">ACCV 2026 · co-first author</a><a href="#/icisn">ICISN 2026</a></dd></div>
+      <div><dt>Publications</dt><dd class="h-links"><a href="#/accv">ACCV 2026</a><a href="#/icisn">ICISN 2026</a><span class="h-co">co-first author on both</span></dd></div>
       <div><dt>Research</dt><dd>Uncertainty-aware perception, computer vision, interactive systems</dd></div>
       <div><dt>Systems</dt><dd class="h-links"><a href="#/iris">Iris</a><a href="#/seatscout">SeatScout</a><a href="#/cafe">Cafe Finder</a></dd></div>
     </dl>
@@ -2183,16 +2184,16 @@ footer{border-top:1px solid var(--ink); padding-block:24px 56px; display:flex; j
         </div>
       </li>
       <li class="pub">
-        <div class="pub-v"><span class="rv-badge alt">ICISN 2026</span><span class="pub-role">Second author</span></div>
+        <div class="pub-v"><span class="rv-badge alt">ICISN 2026</span><span class="pub-role">Co-first author</span></div>
         <div class="pub-b">
           <h3><a href="#/icisn">24H-GNN: A Pattern-Driven Pseudo-Label Fusion Graph Network for City-Wide Traffic Flow Prediction</a></h3>
-          <p class="pub-a">Thanh Nhan Ho, <b>Dong Anh Nguyen</b>, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le</p>
+          <p class="pub-a">Thanh Nhan Ho*, <b>Dong Anh Nguyen*</b>, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le <span>* equal contribution</span></p>
           <p class="pub-s">Sparse loop detectors lend pseudo-labels to the roads that only taxis cover, by similarity of their 24-hour patterns; a graph network learns the whole city. <b>hotspot@100 = 0.97</b> on 838 road segments.</p>
           <p class="pub-m"><b>My part</b> Graph models (GraphSAGE, multi-scale GNN, baselines) · evaluation and hotspot maps</p>
           <div class="pub-l"><a class="pill sun" href="#/icisn">How it works</a><a class="pub-x" href="https://donganh1409.github.io/papers/icisn2026-24h-gnn.pdf" target="_blank" rel="noopener">PDF</a><a class="pub-x" href="#icisn-bib">BibTeX</a></div>
         </div>
         <div class="pub-fig pf-g" aria-hidden="true">
-          <svg viewBox="0 0 200 120"><g stroke="#B9B7B0" stroke-width="1.6"><path d="M20 90 60 60 105 75 150 40 180 70M60 60 70 20 150 40M105 75 120 110 180 70"/></g><g><circle cx="20" cy="90" r="7" fill="#141414"/><circle cx="70" cy="20" r="7" fill="#141414"/><circle cx="150" cy="40" r="7" fill="#141414"/><circle cx="60" cy="60" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/><circle cx="105" cy="75" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/><circle cx="180" cy="70" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/><circle cx="120" cy="110" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/></g></svg>
+          <svg viewBox="0 0 200 120"><g stroke="#B9B7B0" stroke-width="1.6" fill="none"><path d="M20 90 60 60 105 75 150 40 180 70M60 60 70 20 150 40M105 75 120 110 180 70"/></g><g><circle cx="20" cy="90" r="7" fill="#141414"/><circle cx="70" cy="20" r="7" fill="#141414"/><circle cx="150" cy="40" r="7" fill="#141414"/><circle cx="60" cy="60" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/><circle cx="105" cy="75" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/><circle cx="180" cy="70" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/><circle cx="120" cy="110" r="7" fill="#7FD9A8" stroke="#141414" stroke-width="1.6"/></g></svg>
           <p class="pf-o"><span class="lg"><i class="k"></i>loop detector</span><span class="lg"><i class="m"></i>pseudo-labelled</span></p>
         </div>
       </li>
@@ -2287,7 +2288,7 @@ footer{border-top:1px solid var(--ink); padding-block:24px 56px; display:flex; j
           <h3>Publications</h3>
           <ol class="a4-tl">
             <li><span class="t">2026</span><b><a href="#/accv">ACCV 2026</a></b><span class="s">Co-first author · probabilistic event retrieval</span></li>
-            <li><span class="t">2026</span><b><a href="#/icisn">ICISN 2026</a></b><span class="s">Second author · graph learning for traffic</span></li>
+            <li><span class="t">2026</span><b><a href="#/icisn">ICISN 2026</a></b><span class="s">Co-first author · graph learning for traffic</span></li>
           </ol>
         </div>
         <div class="a4-block">
@@ -3043,7 +3044,7 @@ score = <span class="n">.50</span> * words + <span class="n">.35</span> * taste 
   <section class="rv-head">
     <p class="rv-venue"><span class="rv-badge alt">ICISN 2026</span>International Conference on Intelligent Systems and Networks · accepted</p>
     <h1 class="rv-title">24H-GNN: A Pattern-Driven Pseudo-Label Fusion Graph Network for City-Wide Traffic Flow Prediction</h1>
-    <p class="rv-authors">Thanh Nhan Ho, <b>Dong Anh Nguyen</b>, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le</p>
+    <p class="rv-authors">Thanh Nhan Ho<sup>*</sup>, <b>Dong Anh Nguyen<sup>*</sup></b>, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le <span class="rv-eq"><sup>*</sup> equal contribution, co-first authors</span></p>
     <div class="rv-links">
       <a class="rv-btn alt" href="https://donganh1409.github.io/papers/icisn2026-24h-gnn.pdf" target="_blank" rel="noopener">Read the paper (PDF)</a>
       <a class="rv-btn ghost" href="#icisn-demo">Try the idea</a>
@@ -3055,7 +3056,7 @@ score = <span class="n">.50</span> * words + <span class="n">.35</span> * taste 
     <div class="rv-tldr-q"><p class="rv-k">Problem</p><p>Loop detectors measure traffic accurately but only on a few roads. Taxi GPS covers almost every road but is noisy and biased. Most road segments have no ground-truth label.</p></div>
     <div class="rv-tldr-q"><p class="rv-k">Idea</p><p>Normalise both sources into 24-hour patterns. Give every unlabelled segment a pseudo-label from the five loop segments whose daily pattern it resembles most, fuse it with the taxi profile, and learn on the road graph.</p></div>
     <div class="rv-tldr-q"><p class="rv-k">Result</p><p>On 838 road segments in San Francisco, hotspot@50 = 0.92 and hotspot@100 = 0.97, above every GNN baseline in hotspot ranking.</p></div>
-    <div class="rv-tldr-q mine"><p class="rv-k">My part</p><p>Second author. I built and trained the graph models (the fusion GraphSAGE and multi-scale GNN, and the baselines they are compared with), and ran the evaluation: hotspot@k metrics and the hotspot maps.</p></div>
+    <div class="rv-tldr-q mine"><p class="rv-k">My part</p><p>Co-first author. I built and trained the graph models (the fusion GraphSAGE and multi-scale GNN, and the baselines they are compared with), and ran the evaluation: hotspot@k metrics and the hotspot maps.</p></div>
   </section>
 
   <section class="rv-sec" aria-labelledby="icisn-h-pipe">
@@ -3178,7 +3179,7 @@ score = <span class="n">.50</span> * words + <span class="n">.35</span> * taste 
     <h2>What I have done</h2>
     <div class="st-grid">
       <a class="st-card" href="#/accv"><span class="rv-k">Perception under uncertainty · ACCV 2026</span><b>Calibrated confidence beats hard decisions.</b><span>As co-first author, I modelled the correctness of each perceived attribute as a latent variable and propagated detection uncertainty to the ground plane. Retrieval stays robust when perception degrades: 3.3× Recall@5 over exact matching.</span></a>
-      <a class="st-card" href="#/icisn"><span class="rv-k">Learning with sparse supervision · ICISN 2026</span><b>Borrowing labels from where they are reliable.</b><span>I built the graph models and the evaluation for a pseudo-label fusion framework that extends sparse sensor supervision to a whole city's road network.</span></a>
+      <a class="st-card" href="#/icisn"><span class="rv-k">Learning with sparse supervision · ICISN 2026</span><b>Borrowing labels from where they are reliable.</b><span>As co-first author, I built the graph models and the evaluation for a pseudo-label fusion framework that extends sparse sensor supervision to a whole city's road network.</span></a>
       <a class="st-card" href="#systems"><span class="rv-k">Systems I built</span><b>Interfaces that act on confidence.</b><span>Iris verifies a wearer by the iris and explains every refusal; SeatScout runs YOLO11 in the browser and holds a seat through a missed detection; Cafe Finder labels places from evidence and says when it does not know.</span></a>
     </div>
   </section>

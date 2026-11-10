@@ -9,8 +9,8 @@ Human–computer interaction and computer vision. Live at **https://donganh1409.
   *Asian Conference on Computer Vision (ACCV) 2026*, accepted. \*Equal contribution.
   [Method page](https://donganh1409.github.io/#/accv) · [PDF](papers/accv2026-probabilistic-structured-event-modeling.pdf)
 - **24H-GNN: A Pattern-Driven Pseudo-Label Fusion Graph Network for City-Wide Traffic Flow Prediction.**
-  Thanh Nhan Ho, **Dong Anh Nguyen**, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le.
-  *International Conference on Intelligent Systems and Networks (ICISN) 2026*, accepted.
+  Thanh Nhan Ho\*, **Dong Anh Nguyen\***, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le.
+  *International Conference on Intelligent Systems and Networks (ICISN) 2026*, accepted. \*Equal contribution.
   [Method page](https://donganh1409.github.io/#/icisn) · [PDF](papers/icisn2026-24h-gnn.pdf)
 
 [Research statement](https://donganh1409.github.io/#/statement)
