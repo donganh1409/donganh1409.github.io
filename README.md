@@ -5,7 +5,7 @@ Human–computer interaction and computer vision. Live at **https://donganh1409.
 ## Publications
 
 - **Probabilistic Structured Event Modeling for Video Event Recognition under Perceptual Uncertainty.**
-  Nhan Thanh Ho\*, **Anh Dong Nguyen\***, Thuan Duc Tran, Thang Van Nguyen, Bui Anh Thinh, Nguyen Bao Tran, Long Nhat Ho.
+  Nhan Thanh Ho\*, **Anh Dong Nguyen\***, Thuan Duc Tran\*, Thang Van Nguyen, Bui Anh Thinh, Nguyen Bao Tran, Long Nhat Ho.
   *Asian Conference on Computer Vision (ACCV) 2026*, accepted. \*Equal contribution.
   [Method page](https://donganh1409.github.io/#/accv) · [PDF](papers/accv2026-probabilistic-structured-event-modeling.pdf)
 - **24H-GNN: A Pattern-Driven Pseudo-Label Fusion Graph Network for City-Wide Traffic Flow Prediction.**
@@ -13,7 +13,7 @@ Human–computer interaction and computer vision. Live at **https://donganh1409.
   *International Conference on Intelligent Systems and Networks (ICISN) 2026*, accepted. \*Equal contribution.
   [Method page](https://donganh1409.github.io/#/icisn) · [PDF](papers/icisn2026-24h-gnn.pdf)
 
-[Research statement](https://donganh1409.github.io/#/statement)
+[Research statement](https://donganh1409.github.io/#/statement) · [CV · About me](https://donganh1409.github.io/cv/)
 
 ## Systems, with code
 

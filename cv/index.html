@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anh Dong Nguyen</title>
+<meta name="description" content="Anh Dong Nguyen, Master of Research student at Ho Chi Minh City University of Technology. Computer vision, structured memory and human–computer interaction under perceptual uncertainty.">
+<meta name="author" content="Anh Dong Nguyen">
+<meta property="og:title" content="Anh Dong Nguyen">
+<meta property="og:description" content="Computer vision, structured memory and human–computer interaction under perceptual uncertainty. Publications, projects and CV.">
+<meta property="og:image" content="https://donganh1409.github.io/cv/img/accv.webp">
+<link rel="canonical" href="https://donganh1409.github.io/cv/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<style>
+:root{--ink:#1d1d1f; --mut:#5f6368; --line:#e3e3e6; --soft:#f6f6f8; --acc:#2f62b0; --acc-soft:#eaf0fa; --badge:#2f62b0}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){--ink:#e8e8ea; --mut:#a3a6ad; --line:#33353b; --soft:#1e2024; --acc:#7aa7ec; --acc-soft:#1f2a3d; --badge:#3d6fbf} }
+:root[data-theme="dark"]{--ink:#e8e8ea; --mut:#a3a6ad; --line:#33353b; --soft:#1e2024; --acc:#7aa7ec; --acc-soft:#1f2a3d; --badge:#3d6fbf}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0; background:Canvas; background:light-dark(#fff,#141518); color:var(--ink); font:400 17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif; color-scheme:light dark}
+a{color:var(--acc); text-decoration:none} a:hover{text-decoration:underline}
+nav{position:sticky; top:0; z-index:5; background:light-dark(rgba(255,255,255,.92),rgba(20,21,24,.92)); backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+.nav-in{max-width:880px; margin:0 auto; padding:12px 16px; display:flex; align-items:center; gap:22px; flex-wrap:wrap}
+.nav-in .me{font-weight:700; color:var(--ink); margin-right:auto}
+.nav-in a:not(.me){color:var(--mut); font-size:15.5px} .nav-in a:not(.me):hover{color:var(--acc); text-decoration:none}
+main{max-width:880px; margin:0 auto; padding:0 16px 40px}
+header.hd{display:grid; grid-template-columns:160px minmax(0,1fr); gap:28px; align-items:center; padding:44px 0 8px}
+.hd img{width:160px; height:160px; border-radius:50%; object-fit:cover; display:block}
+h1{margin:0; font:600 38px/1.15 "Source Serif 4",Georgia,serif; letter-spacing:-.01em}
+.sub{margin:6px 0 12px; color:var(--mut); font-size:17px}
+.links{display:flex; flex-wrap:wrap; gap:8px 18px; margin:0; padding:0; list-style:none; font-size:15.5px}
+.links a{display:inline-flex; align-items:center; gap:6px}
+.links svg{width:16px; height:16px; fill:currentColor}
+.bio{margin:22px 0 0}
+.bio p{margin:0 0 12px}
+.bio .seek{padding:10px 14px; border-left:3px solid var(--acc); background:var(--acc-soft); border-radius:0 8px 8px 0}
+h2{margin:44px 0 6px; font:600 26px/1.2 "Source Serif 4",Georgia,serif; padding-bottom:6px; border-bottom:1px solid var(--line)}
+.legend{margin:6px 0 14px; color:var(--mut); font-size:14.5px}
+ol.pubs{list-style:none; margin:0; padding:0; counter-reset:p}
+.pub{display:grid; grid-template-columns:200px minmax(0,1fr); gap:20px; padding:18px 0; border-bottom:1px solid var(--line)}
+.pub:last-child{border-bottom:0}
+.thumb{position:relative; display:block; align-self:start}
+.thumb img{display:block; width:100%; height:auto; border-radius:6px; border:1px solid var(--line); background:#fff}
+.badge{position:absolute; top:-8px; left:-8px; background:var(--badge); color:#fff; font:700 12px/1 "Source Sans 3",sans-serif; letter-spacing:.03em; padding:5px 8px; border-radius:4px}
+.badge.rev{background:#8a6d1f}
+.t{margin:0; font-weight:700; font-size:17.5px; line-height:1.35}
+.t a{color:var(--ink)}
+.au{margin:4px 0 0; font-size:15.5px; color:var(--mut)}
+.au b{color:var(--ink); font-weight:600; text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px}
+.ve{margin:2px 0 0; font-style:italic; font-size:15.5px}
+.pl{margin:8px 0 0; display:flex; flex-wrap:wrap; gap:6px}
+.pl a, .pl summary{display:inline-block; font-size:13px; font-weight:600; letter-spacing:.02em; text-transform:uppercase; color:var(--acc); border:1px solid var(--acc); border-radius:4px; padding:2px 8px; cursor:pointer; list-style:none; line-height:1.5}
+.pl a:hover, .pl summary:hover{background:var(--acc); color:#fff; text-decoration:none}
+.pl summary::-webkit-details-marker{display:none}
+.pl details{display:contents}
+.pl details[open] summary{background:var(--acc); color:#fff}
+.box{grid-column:1 / -1; margin-top:8px; font-size:15px; line-height:1.55; background:var(--soft); border-radius:6px; padding:12px 14px}
+.box pre{margin:0; white-space:pre-wrap; font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace}
+.contrib{margin:6px 0 0; font-size:15px}
+.contrib span{font-weight:600}
+.proj{display:grid; grid-template-columns:200px minmax(0,1fr); gap:20px; padding:16px 0; border-bottom:1px solid var(--line)}
+.proj:last-child{border-bottom:0}
+.proj p{margin:4px 0 0; font-size:15.5px}
+.proj .y{color:var(--mut); font-weight:400}
+.cv{margin:0; padding:0; list-style:none}
+.cv > li{display:grid; grid-template-columns:150px minmax(0,1fr); gap:16px; padding:10px 0; border-bottom:1px solid var(--line)}
+.cv > li:last-child{border-bottom:0}
+.cv .d{color:var(--mut); font-size:15px; font-variant-numeric:tabular-nums}
+.cv b{font-weight:600}
+.cv p{margin:2px 0 0; font-size:15.5px; color:var(--mut)}
+.cv ul{margin:4px 0 0; padding-left:18px; font-size:15.5px; color:var(--mut)}
+.cv ul li{padding:2px 0}
+.sk{display:grid; grid-template-columns:150px minmax(0,1fr); gap:6px 16px; margin:10px 0 0; font-size:15.5px}
+.sk dt{color:var(--mut)} .sk dd{margin:0}
+footer{max-width:880px; margin:0 auto; padding:24px 16px 48px; color:var(--mut); font-size:14px; border-top:1px solid var(--line)}
+@media (max-width: 640px){
+  header.hd{grid-template-columns:96px minmax(0,1fr); gap:16px; padding-top:28px}
+  .hd img{width:96px; height:96px}
+  h1{font-size:28px}
+  .pub, .proj{grid-template-columns:minmax(0,1fr); gap:10px}
+  .thumb{max-width:340px}
+  .cv > li, .sk{grid-template-columns:minmax(0,1fr); gap:2px}
+  .nav-in{gap:14px}
+}
+@media print{ nav{display:none} .pl{display:none} body{font-size:13px} }
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <div class="nav-in">
+    <a class="me" href="#top">Anh Dong Nguyen</a>
+    <a href="#publications">Publications</a>
+    <a href="#projects">Projects</a>
+    <a href="#cv">CV</a>
+    <a href="../">Portfolio</a>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hd">
+    <img src="img/me.jpg" alt="Portrait of Anh Dong Nguyen" width="160" height="160">
+    <div>
+      <h1>Anh Dong Nguyen</h1>
+      <p class="sub">Master of Research student, Ho Chi Minh City University of Technology (HCMUT – VNU-HCM)</p>
+      <ul class="links">
+        <li><a href="mailto:anh.nguyend@hcmut.edu.vn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zm2 2v.4l7 4.6 7-4.6V7zm14 2.8-7 4.6-7-4.6V17h14z"/></svg>Email</a></li>
+        <li><a href="https://github.com/donganh1409" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.5 21.8c.6.1.8-.2.8-.6v-2c-3.1.7-3.8-1.5-3.8-1.5-.5-1.3-1.2-1.6-1.2-1.6-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.7 2.6 1.2 3.3.9.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.2 1.2-3-.1-.3-.5-1.4.1-3 0 0 .9-.3 3.1 1.2a10.7 10.7 0 0 1 5.6 0c2.1-1.5 3.1-1.2 3.1-1.2.6 1.6.2 2.7.1 3 .7.8 1.1 1.8 1.1 3 0 4.3-2.6 5.2-5.1 5.5.4.3.8 1 .8 2v3c0 .3.2.7.8.6A11.2 11.2 0 0 0 12 .8Z"/></svg>GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/anh-nguyendong/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 3a2 2 0 1 1 0 4 2 2 0 0 1 0-4zM3 8.5h3V21H3zM9 8.5h2.9v1.7h.1c.4-.8 1.4-1.9 3.2-1.9 3.4 0 4 2.2 4 5.1V21h-3v-6.8c0-1.6 0-3.7-2.3-3.7s-2.6 1.8-2.6 3.6V21H9z"/></svg>LinkedIn</a></li>
+        <li><a href="../"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3zm2 2v8h14V6zM8 18h8v2H8z"/></svg>Portfolio</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="bio" aria-label="About me">
+    <p>I am a Master of Research student in Industrial Engineering at <b>Ho Chi Minh City University of Technology (HCMUT – VNU-HCM)</b>, a collaborative research assistant with <b>Prof. Mo El-Haj</b> at <b>VinUniversity</b>, and in parallel a second-degree student in Electronics and Telecommunications at the <b>Posts and Telecommunications Institute of Technology</b>.</p>
+    <p>My research asks how systems that perceive the world should act when their perception is uncertain. I work on <b>uncertainty-aware perception</b> for video, <b>structured episodic memory</b> for long-horizon video and language, and <b>graph learning</b> under sparse supervision, and I build interactive systems that run on these ideas. I am moving toward <b>wearable and egocentric interaction</b>, where a system has to decide from noisy signals whether to act, ask or wait.</p>
+    <p class="seek">I am looking for PhD positions in human–computer interaction and computer vision.</p>
+  </section>
+
+  <h2 id="publications">Publications</h2>
+  <p class="legend">* equal contribution (co-first authors). Newest first.</p>
+  <ol class="pubs">
+    <li class="pub">
+      <a class="thumb" href="https://ggwp00p.github.io/probabilistic-event-modeling/structured-episodic-retrieval/"><span class="badge rev">ARR</span><img src="img/ser.webp" alt="Figure 1: retrieval rules on one EPBench question, comparing Hard-AND intersection with graded per-axis scoring" loading="lazy" width="640" height="291"></a>
+      <div>
+        <p class="t"><a href="https://ggwp00p.github.io/probabilistic-event-modeling/structured-episodic-retrieval/">What Makes Structured Episodic Retrieval Robust to Noisy Query Cues? A Controlled Study</a></p>
+        <p class="au">Nhan Thanh Ho*, <b>Anh Dong Nguyen*</b>, Thuan Duc Tran*, Mo El-Haj</p>
+        <p class="ve">Under review at ACL Rolling Review (COLING 2027), 2026</p>
+        <div class="pl">
+          <details><summary>Abstract</summary><div class="box">Structured memories for LLM agents index events by time, place, entity and topic, and answer a query by intersecting the matches on each axis. Intersection fails when an LLM extracts the events and the query cues, because one weak axis removes the right memory. We run a controlled study of retrieval rules on EPBench and LoCoMo. Hard intersection returns nothing for 63% of EPBench questions, and adding up the per-axis matches instead recovers most of the loss. How best to add them up depends on what the answer does with the retrieved set: routing questions to a selective rule recovers the retrieval loss. On LoCoMo, matching the speaker raises answer accuracy over dense retrieval by 7.9 points. All results carry paired bootstrap intervals, and our conclusions are limited to these two benchmarks.</div></details>
+          <a href="https://ggwp00p.github.io/probabilistic-event-modeling/structured-episodic-retrieval/">Project page</a>
+          <a href="https://ggwp00p.github.io/probabilistic-event-modeling/structured-episodic-retrieval/static/pdf/paper.pdf">PDF</a>
+        </div>
+      </div>
+    </li>
+    <li class="pub">
+      <a class="thumb" href="https://ggwp00p.github.io/probabilistic-event-modeling/index.html"><span class="badge">ACCV</span><img src="img/accv.webp" alt="Figure 1: video observations become structured events with calibrated per-attribute confidences, retrieved by confidence-weighted matching" loading="lazy" width="640" height="341"></a>
+      <div>
+        <p class="t"><a href="https://ggwp00p.github.io/probabilistic-event-modeling/index.html">Probabilistic Structured Event Modeling for Video Event Recognition under Perceptual Uncertainty</a></p>
+        <p class="au">Nhan Thanh Ho*, <b>Anh Dong Nguyen*</b>, Thuan Duc Tran*, Thang Van Nguyen, Bui Anh Thinh, Nguyen Bao Tran, Long Nhat Ho</p>
+        <p class="ve">Asian Conference on Computer Vision (ACCV), 2026</p>
+        <div class="pl">
+          <details><summary>Abstract</summary><div class="box">Long-duration video understanding systems summarize continuous observations as structured event representations to enable semantic retrieval. However, these events are produced by imperfect perceptual pipelines, meaning that every extracted attribute carries inherent uncertainty. This paper models structured events as probabilistic entities in which the correctness of each perceptual attribute is treated as a latent variable. A marginal-likelihood retrieval formulation integrates attribute-level uncertainty, allowing reliable attributes to compensate for uncertain ones instead of discarding an event after a single erroneous observation. For the spatial axis, detection covariance is propagated through the homography Jacobian to estimate uncertainty on the ground plane. Evaluated on an uncertainty-driven event retrieval benchmark using the indoor CAVIAR and outdoor VIRAT datasets, the framework consistently outperforms deterministic hard matching under increasing attribute noise, reaching 3.3× higher Recall@5 (0.394 vs. 0.120) at the highest corruption level.</div></details>
+          <a href="https://ggwp00p.github.io/probabilistic-event-modeling/index.html">Project page</a>
+          <a href="https://ggwp00p.github.io/probabilistic-event-modeling/static/pdf/paper.pdf">PDF</a>
+          <details><summary>Bib</summary><div class="box"><pre>@inproceedings{ho2026probabilistic,
+  title     = {Probabilistic Structured Event Modeling for Video Event
+               Recognition under Perceptual Uncertainty},
+  author    = {Ho, Nhan Thanh and Nguyen, Anh Dong and Tran, Thuan Duc and
+               Nguyen, Thang Van and {Bui Anh Thinh} and {Nguyen Bao Tran} and
+               Ho, Long Nhat},
+  booktitle = {Asian Conference on Computer Vision (ACCV)},
+  year      = {2026}
+}</pre></div></details>
+        </div>
+      </div>
+    </li>
+    <li class="pub">
+      <a class="thumb" href="https://ggwp00p.github.io/probabilistic-event-modeling/24h-gnn/#demo"><span class="badge">ICISN</span><img src="img/gnn.webp" alt="Figure 1: the 24H-GNN pipeline, from multimodal data and pseudo-labels to graph learning and hotspot ranking" loading="lazy" width="640" height="307"></a>
+      <div>
+        <p class="t"><a href="https://ggwp00p.github.io/probabilistic-event-modeling/24h-gnn/#demo">24H-GNN: A Pattern-Driven Pseudo-Label Fusion Graph Network for City-Wide Traffic Flow Prediction</a></p>
+        <p class="au">Thanh Nhan Ho*, <b>Dong Anh Nguyen*</b>, Minh Tai Pham Nguyen, Minh Khue Phan Tran, Hoang Minh Nguyen, Nguyen Bao Tran, Trong Nhan Le</p>
+        <p class="ve">International Conference on Intelligent Systems and Networks (ICISN), Lecture Notes in Networks and Systems, Springer, 2026</p>
+        <div class="pl">
+          <details><summary>Abstract</summary><div class="box">Urban traffic flow prediction is essential for effective transportation management but remains challenging due to heterogeneous and spatially inconsistent data sources. We propose a pseudo-label fusion framework that integrates loop detector data and taxi GPS trajectories using spatio-temporal similarity. Graph neural networks (GNNs) are employed to model network dependencies, while an adaptive fusion strategy balances reliable sensor data and trajectory-based estimates. The proposed approach achieves strong hotspot detection performance (hotspot@50 = 0.92, hotspot@100 = 0.97) and consistently outperforms baseline models, particularly under limited supervision.</div></details>
+          <a href="https://ggwp00p.github.io/probabilistic-event-modeling/24h-gnn/#demo">Project page</a>
+          <a href="https://ggwp00p.github.io/probabilistic-event-modeling/24h-gnn/static/pdf/paper.pdf">PDF</a>
+          <details><summary>Bib</summary><div class="box"><pre>@inproceedings{ho2026hgnn,
+  title     = {24H-GNN: A Pattern-Driven Pseudo-Label Fusion Graph Network
+               for City-Wide Traffic Flow Prediction},
+  author    = {Ho, Thanh Nhan and Nguyen, Dong Anh and Pham Nguyen, Minh Tai and
+               Phan Tran, Minh Khue and Nguyen, Hoang Minh and
+               {Nguyen Bao Tran} and Le, Trong Nhan},
+  booktitle = {International Conference on Intelligent Systems and Networks (ICISN)},
+  series    = {Lecture Notes in Networks and Systems},
+  publisher = {Springer},
+  year      = {2026}
+}</pre></div></details>
+        </div>
+      </div>
+    </li>
+  </ol>
+
+  <h2 id="projects">Projects</h2>
+  <p class="legend">Personal projects with working demos and public code. Each has a write-up on my <a href="../">portfolio</a>.</p>
+  <div class="proj">
+    <a class="thumb" href="https://donganh1409.github.io/iris_project/"><img src="img/iris.webp" alt="The Iris Look-to-Pay web app verifying an enrolled iris before a payment" loading="lazy" width="640" height="436"></a>
+    <div>
+      <p class="t"><a href="../#/iris">Iris Look-to-Pay</a> <span class="y">· 2023</span></p>
+      <p>Iris verification for a look-to-pay interaction on smart glasses: HOG features, PCA and cosine matching with an explicit threshold, and refusals that explain themselves. Ported to the browser and checked against the Python original.</p>
+      <div class="pl"><a href="https://donganh1409.github.io/iris_project/">Live demo</a><a href="https://github.com/donganh1409/iris_project">Code</a><a href="../#/iris">Write-up</a></div>
+    </div>
+  </div>
+  <div class="proj">
+    <a class="thumb" href="https://seatscout-social-app-team.github.io/AI-Engine-Prototype/seatscout/"><img src="img/seat.webp" alt="The SeatScout live demo: detections on a café video, seat states and a staff alert" loading="lazy" width="640" height="400"></a>
+    <div>
+      <p class="t"><a href="../#/seatscout">SeatScout</a> <span class="y">· 2024</span></p>
+      <p>A live seat map from the cameras a café already has. YOLO11n runs on-device in the browser; a per-seat state machine (Free, Taken, Away, Check) survives missed detections and guests who step away. I designed the computer-vision pipeline and the seat rules.</p>
+      <div class="pl"><a href="https://seatscout-social-app-team.github.io/AI-Engine-Prototype/seatscout/">Live demo</a><a href="https://github.com/SEATSCOUT-SOCIAL-APP-TEAM/AI-Engine-Prototype">Code</a><a href="../#/seatscout">Write-up</a></div>
+    </div>
+  </div>
+  <div class="proj">
+    <a class="thumb" href="https://donganh1409.github.io/perfect-cafe-finder/"><img src="img/cafe.webp" alt="The Cafe Finder app: an OpenStreetMap map of Saigon with ranked cafés and the evidence behind each label" loading="lazy" width="640" height="400"></a>
+    <div>
+      <p class="t"><a href="../#/cafe">Cafe Finder</a> <span class="y">· 2025</span></p>
+      <p>Personalised search over 1,441 real cafés in Ho Chi Minh City from OpenStreetMap. A bilingual labeller turns what people say into labels with evidence and confidence; ranking treats unknown as unknown, not as no. I designed the personalisation.</p>
+      <div class="pl"><a href="https://donganh1409.github.io/perfect-cafe-finder/">Live demo</a><a href="https://github.com/donganh1409/perfect-cafe-finder">Code</a><a href="../#/cafe">Write-up</a></div>
+    </div>
+  </div>
+
+  <h2 id="cv">CV</h2>
+  <h3 style="margin:18px 0 4px; font-size:18px">Research experience</h3>
+  <ul class="cv">
+    <li><span class="d">Apr 2026 – now</span><div><b>Collaborative Research Assistant</b>, VinUniversity · supervised by Prof. Mo El-Haj<ul><li>Probabilistic and structured memory representations for long-horizon video and language understanding under perceptual uncertainty (ACCV 2026; one paper under review).</li></ul></div></li>
+    <li><span class="d">Jun 2026 – now</span><div><b>Technical Research Team Lead</b>, Provincial Science &amp; Technology Initiative, Po Sah Inư · PI: Dr. Tran Duc Thuan<ul><li>A context-aware AI companion for visitors at the Po Sah Inư heritage site (Mũi Né): multimodal human–agent interaction, spatial context awareness, real-time conversational retrieval and a culturally grounded knowledge graph; prototyping, latency optimisation and field evaluation outdoors.</li></ul></div></li>
+    <li><span class="d">Oct 2025 – Mar 2026</span><div><b>Undergraduate Research Assistant</b>, Advancing Computing Lab (ACLAB), HCMUT · supervised by Dr. Le Trong Nhan<ul><li>24-hour spatio-temporal graph neural networks for city-wide traffic prediction (ICISN 2026).</li></ul></div></li>
+  </ul>
+
+  <h3 style="margin:22px 0 4px; font-size:18px">Education</h3>
+  <ul class="cv">
+    <li><span class="d">Oct 2026 – now</span><div><b>Master of Research in Industrial Engineering</b>, Ho Chi Minh City University of Technology (HCMUT – VNU-HCM)<p>Thesis: An Explainable AI-Based Decision Support Framework for Maintenance Prioritization in Smart Manufacturing.</p></div></li>
+    <li><span class="d">Jun 2026 – now</span><div><b>B.Eng. in Electronics and Telecommunications Engineering</b> (second degree), Posts and Telecommunications Institute of Technology<p>Embedded systems, signal processing, IMU and optical sensing, BLE, microcontrollers.</p></div></li>
+    <li><span class="d">Sep 2022 – Apr 2026</span><div><b>B.Eng. in Industrial Management</b>, Ho Chi Minh City University of Technology (HCMUT – VNU-HCM)<p>Operations research, systems engineering, probability and statistics, optimisation.</p></div></li>
+  </ul>
+
+  <h3 style="margin:22px 0 4px; font-size:18px">Honours and certificates</h3>
+  <ul class="cv">
+    <li><span class="d">2025</span><div><b>Outstanding Academic Performance</b>, HCMUT – VNU-HCM, academic year 2024–2025 (semester GPA 3.8/4.0)</div></li>
+    <li><span class="d">2026</span><div><b>IELTS Academic</b>, overall band 7.0</div></li>
+    <li><span class="d">2024</span><div><b>Google Business Intelligence</b> and <b>Google Data Analytics</b> Specializations (Coursera)</div></li>
+  </ul>
+
+  <h3 style="margin:22px 0 4px; font-size:18px">Skills</h3>
+  <dl class="sk">
+    <dt>Programming</dt><dd>Python, C++, Objective-C, TypeScript</dd>
+    <dt>ML and vision</dt><dd>PyTorch, TensorFlow, TensorRT, ONNX Runtime, OpenCV, Ultralytics YOLO, graph neural networks</dd>
+    <dt>Hardware</dt><dd>Arduino, Raspberry Pi, ESP32, IMU and optical sensors, BLE, prototyping</dd>
+    <dt>Languages</dt><dd>Vietnamese (native), English (C1; IELTS 7.0)</dd>
+  </dl>
+</main>
+
+<footer>© 2026 Anh Dong Nguyen · Last updated November 2026 · <a href="../">Portfolio</a></footer>
+</body>
+</html>
